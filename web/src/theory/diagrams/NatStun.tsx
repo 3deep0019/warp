@@ -80,10 +80,11 @@ export default function NatStun() {
         >
           <Wall tone="amb" hole={false} reduced={reduced} ball="blocked" />
         </Scenario>
-
-        {/* ============================== the relay-share bar ============= */}
-        <RelayBar />
       </div>
+
+      {/* ============================== the relay-share bar ============= */}
+      {/* outside the role="img" wrapper so its statistic stays readable */}
+      <RelayBar />
     </DiagramFrame>
   );
 }
